@@ -1,0 +1,94 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+.form-heading {
+  background-color: DodgerBlue;
+  padding: 15px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-weight: Normal;
+  text-transform: uppercase;
+}
+.content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 30px;
+}
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-group input {
+  display: block;
+  width: 80%;
+  padding: 10px;
+  outline: none;
+  height: 50px;
+}
+.form-group label {
+  position: absolute;
+  color: #ccc;
+  top: 15px;
+  left: 8px;
+}
+.form-group input:focus + label {
+  top: -12px;
+  background-color: red;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+.form-group input:valid + label {
+  top: -12px;
+  background-color: green;
+  color: #fff;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.form select {
+  /* appearance: none;
+  -webkit-appearance: none;
+   -o-appearance: none;
+  -moz-appearance: none;*/
+  padding: 10px;
+  width: 80%;
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+}
+
+.form input[type="submit"] {
+  margin-top: 15px;
+  width: 40%;
+  background-color: DodgerBlue;
+  color: #ffffff;
+  outline: none;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fff;
+  font-size: 15px;
+  display: block;
+  padding: 15px;
+  margin-left: 19%;
+  cursor: pointer;
+}
+
+input[type="text"]:checked .one {
+  background-color: blue;
+}
